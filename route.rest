@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+###
+
+GET http://localhost:5000/users/6108d75956fc730bf893ad12
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+        "name": "John",
+        "lastName": "Doe",
+        "married": false
+}
+
+###
+
+PATCH http://localhost:5000/users/6108e4715e51181ad0df1fd2
+Content-Type: application/json
+
+{
+  "name": "Jane",
+  "lastName": "Smith"
+}
+###
+
+DELETE http://localhost:5000/users/6108d8ffd6f7b018c82eaf0b
